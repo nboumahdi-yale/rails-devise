@@ -39,4 +39,6 @@ group :test do
   gem 'database_cleaner'
   gem 'launchy'
   gem 'selenium-webdriver'
+  gem 'simplecov', :require => false
+  gem 'simplecov-rcov'
 end
