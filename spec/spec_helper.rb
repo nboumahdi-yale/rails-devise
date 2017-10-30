@@ -17,10 +17,13 @@
 #
 # See http://rubydoc.info/gems/rspec-core/RSpec/Core/Configuration
 require 'simplecov'
-require 'simplecov-rcov'
+require 'simplecov-json'
 
-SimpleCov.formatter = SimpleCov::Formatter::RcovFormatter
-SimpleCov.start 'rails'
+SimpleCov.formatters = [
+    SimpleCov::Formatter::HTMLFormatter,
+    SimpleCov::Formatter::JSONFormatter,
+]
+SimpleCov.start
 
 RSpec.configure do |config|
   # rspec-expectations config goes here. You can use an alternate
