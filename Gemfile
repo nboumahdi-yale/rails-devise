@@ -40,6 +40,6 @@ group :test do
   gem 'launchy'
   gem 'selenium-webdriver'
   gem 'simplecov', :require => false
-  gem 'simplecov-rcov'
+  gem 'simplecov-rcov', :require => false
   gem 'simplecov-json', :require => false
 end
