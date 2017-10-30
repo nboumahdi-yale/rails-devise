@@ -10,6 +10,7 @@ gem 'jquery-rails'
 gem 'turbolinks', '~> 5'
 gem 'jbuilder', '~> 2.5'
 gem 'mysql2', '>= 0.3.18', '< 0.5'
+gem 'ci_reporter_rspec'
 
 group :development, :test do
   gem 'byebug', platform: :mri
