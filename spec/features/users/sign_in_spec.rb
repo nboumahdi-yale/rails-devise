@@ -32,7 +32,7 @@ feature 'Sign in', :devise do
   scenario 'user cannot sign in with wrong email' do
     user = FactoryGirl.create(:user)
     signin('invalid@email.com', user.password)
-    expect(page).to have_content I18n.t 'devise.failure.not_found_in_database', authentication_keys: 'Email'
+    expect(page).to have_content I18n.t 'devise.failure.not_found_in_database', authentication_keys: 'Unknown'
   end
 
   # Scenario: User cannot sign in with wrong password
